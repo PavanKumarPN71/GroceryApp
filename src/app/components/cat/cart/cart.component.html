@@ -1,0 +1,13 @@
+<div *ngFor="let product of cart">
+  <div class="card-deck mb-4">
+    <div class="card h-100" style="width: 18rem;padding: 4px;" >
+      <img class="card-img-top" src="http://rjtmobile.com/grocery/images/{{product.image}}" alt="Card image cap">
+      <div class="card-body" routerLink="/productdetail/{{product._id}}">
+        <h4 class="card-title">{{product.productName}}</h4>
+        <p class="card-text">{{product.description}}</p>
+        <h4 style="color: blue;">Price :{{product.price}} .inr</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
